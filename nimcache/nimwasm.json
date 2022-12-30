@@ -1,0 +1,42 @@
+{
+  "cacheVersion": "D20210525T193831",
+  "outputFile": "/root/wasmrt/nimwasm.wasm",
+  "compile": [
+    [
+      "/root/wasmrt/nimcache/@m..@s.choosenim@stoolchains@snim-@hdevel@slib@sstd@sprivate@sdigitsutils.nim.c",
+      "/usr/bin/clang-15 -c -w -ferror-limit=3 --target=wasm32-unknown-unknown-wasm -I/usr/include -flto -fvisibility=hidden -nostdlib -fdata-sections -ffunction-sections -DPRINTF_DISABLE_SUPPORT_FLOAT=1 -DPRINTF_DISABLE_SUPPORT_LONG_LONG=1 -DPRINTF_DISABLE_SUPPORT_PTRDIFF_T=1 -Os  -fPIC  -I'/root/.choosenim/toolchains/nim-#devel/lib' -I/root/wasmrt -o /root/wasmrt/nimcache/@m..@s.choosenim@stoolchains@snim-@hdevel@slib@sstd@sprivate@sdigitsutils.nim.c.o /root/wasmrt/nimcache/@m..@s.choosenim@stoolchains@snim-@hdevel@slib@sstd@sprivate@sdigitsutils.nim.c"
+    ],
+    [
+      "/root/wasmrt/nimcache/@m..@s.choosenim@stoolchains@snim-@hdevel@slib@ssystem.nim.c",
+      "/usr/bin/clang-15 -c -w -ferror-limit=3 --target=wasm32-unknown-unknown-wasm -I/usr/include -flto -fvisibility=hidden -nostdlib -fdata-sections -ffunction-sections -DPRINTF_DISABLE_SUPPORT_FLOAT=1 -DPRINTF_DISABLE_SUPPORT_LONG_LONG=1 -DPRINTF_DISABLE_SUPPORT_PTRDIFF_T=1 -Os  -fPIC  -I'/root/.choosenim/toolchains/nim-#devel/lib' -I/root/wasmrt -o /root/wasmrt/nimcache/@m..@s.choosenim@stoolchains@snim-@hdevel@slib@ssystem.nim.c.o /root/wasmrt/nimcache/@m..@s.choosenim@stoolchains@snim-@hdevel@slib@ssystem.nim.c"
+    ],
+    [
+      "/root/wasmrt/nimcache/@mwasmrt.nim.c",
+      "/usr/bin/clang-15 -c -w -ferror-limit=3 --target=wasm32-unknown-unknown-wasm -I/usr/include -flto -fvisibility=hidden -nostdlib -fdata-sections -ffunction-sections -DPRINTF_DISABLE_SUPPORT_FLOAT=1 -DPRINTF_DISABLE_SUPPORT_LONG_LONG=1 -DPRINTF_DISABLE_SUPPORT_PTRDIFF_T=1 -Os  -fPIC  -I'/root/.choosenim/toolchains/nim-#devel/lib' -I/root/wasmrt -o /root/wasmrt/nimcache/@mwasmrt.nim.c.o /root/wasmrt/nimcache/@mwasmrt.nim.c"
+    ],
+    [
+      "/root/wasmrt/nimcache/@mnimwasm.nim.c",
+      "/usr/bin/clang-15 -c -w -ferror-limit=3 --target=wasm32-unknown-unknown-wasm -I/usr/include -flto -fvisibility=hidden -nostdlib -fdata-sections -ffunction-sections -DPRINTF_DISABLE_SUPPORT_FLOAT=1 -DPRINTF_DISABLE_SUPPORT_LONG_LONG=1 -DPRINTF_DISABLE_SUPPORT_PTRDIFF_T=1 -Os  -fPIC  -I'/root/.choosenim/toolchains/nim-#devel/lib' -I/root/wasmrt -o /root/wasmrt/nimcache/@mnimwasm.nim.c.o /root/wasmrt/nimcache/@mnimwasm.nim.c"
+    ]
+  ],
+  "link": [
+    "/root/wasmrt/nimcache/@m..@s.choosenim@stoolchains@snim-@hdevel@slib@sstd@sprivate@sdigitsutils.nim.c.o",
+    "/root/wasmrt/nimcache/@m..@s.choosenim@stoolchains@snim-@hdevel@slib@ssystem.nim.c.o",
+    "/root/wasmrt/nimcache/@mwasmrt.nim.c.o",
+    "/root/wasmrt/nimcache/@mnimwasm.nim.c.o"
+  ],
+  "linkcmd": "/usr/bin/clang-15   -shared -o /root/wasmrt/nimwasm.wasm /root/wasmrt/nimcache/@m..@s.choosenim@stoolchains@snim-@hdevel@slib@sstd@sprivate@sdigitsutils.nim.c.o /root/wasmrt/nimcache/@m..@s.choosenim@stoolchains@snim-@hdevel@slib@ssystem.nim.c.o /root/wasmrt/nimcache/@mwasmrt.nim.c.o /root/wasmrt/nimcache/@mnimwasm.nim.c.o  -L/root/wasmrt/nimcache  --target=wasm32-unknown-unknown-wasm  -nostdlib -Wl,--no-entry,--allow-undefined,--gc-sections,--strip-all,--error-limit=0,--lto-O3,-O3,--export=instantiate,--export=execute,--export=query,--export=interface_version_8,--export=allocate,--export=deallocate",
+  "extraCmds": [],
+  "configFiles": [
+    "/root/.choosenim/toolchains/nim-#devel/config/nim.cfg",
+    "/root/.choosenim/toolchains/nim-#devel/config/config.nims",
+    "/root/wasmrt/config.nims"
+  ],
+  "stdinInput": false,
+  "projectIsCmd": false,
+  "cmdInput": "",
+  "currentDir": "/root/wasmrt",
+  "cmdline": "",
+  "depfiles": [],
+  "nimexe": ""
+}
