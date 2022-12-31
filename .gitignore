@@ -1,4 +1,4 @@
 *.wasm
 *.wast
 /nimcache/
-.github
+/.github/
